@@ -1,6 +1,6 @@
-package com.Hileb.command_toast.toast;
+package world.maryt.CommandToast.toast;
 
-import com.Hileb.command_toast.command.ToastType;
+import world.maryt.CommandToast.command.ToastType;
 import net.minecraft.client.gui.toasts.GuiToast;
 import net.minecraft.client.gui.toasts.IToast;
 import net.minecraft.client.renderer.GlStateManager;
@@ -39,7 +39,7 @@ public class SimpleToast{
     * */
     public static class Factory extends ToastType.ServerToastFactory{
         @Override
-        public com.Hileb.command_toast.toast.ServerToast product(String[] args) throws CommandException {
+        public world.maryt.CommandToast.toast.ServerToast product(String[] args) throws CommandException {
             if (args.length<3) throw new CommandException("Not enough args!");
             return new ServerToast("simple",args);
         }
@@ -50,7 +50,7 @@ public class SimpleToast{
         }
 
         @Override
-        public com.Hileb.command_toast.toast.ServerToast createToast() {
+        public world.maryt.CommandToast.toast.ServerToast createToast() {
             return new ServerToast("simple");
         }
 
@@ -62,7 +62,7 @@ public class SimpleToast{
         }
     }
 
-    public static class ServerToast extends com.Hileb.command_toast.toast.ServerToast{
+    public static class ServerToast extends world.maryt.CommandToast.toast.ServerToast {
         public String[] args=null;
 
         public ITextComponent title=null;

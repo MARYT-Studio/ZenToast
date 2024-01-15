@@ -1,25 +1,26 @@
-package com.Hileb.command_toast;
+package world.maryt.CommandToast;
 
-import com.Hileb.command_toast.command.CommandToast;
-import com.Hileb.command_toast.command.ToastType;
-import com.Hileb.command_toast.toast.SimpleToast;
+import world.maryt.CommandToast.command.CommandToast;
+import world.maryt.CommandToast.command.ToastType;
+import world.maryt.CommandToast.toast.SimpleToast;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import world.maryt.zen_toast.Tags;
 
 /**
  * @Project CommandToast
  * @Author Hileb
  * @Date 2023/12/30 20:01
  **/
-@Mod(modid = CommandToastMod.MODID,version = CommandToastMod.VERSION,name = CommandToastMod.NAME)
+@Mod(modid = CommandToastMod.MOD_ID,version = CommandToastMod.VERSION, name = CommandToastMod.NAME)
 public class CommandToastMod {
-    public static final String MODID="command_toast";
-    public static final String NAME="Command Toast";
-    public static final String VERSION="14.1.0.0";
-    public static final Logger LOGGER= LogManager.getLogger(MODID);
+    public static final String MOD_ID = Tags.MOD_ID;
+    public static final String NAME = "ZenToast";
+    public static final String VERSION = Tags.VERSION;
+    public static final Logger LOGGER= LogManager.getLogger(NAME);
     @Mod.Instance
     public static CommandToastMod INSTANCE;
 

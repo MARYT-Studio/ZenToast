@@ -1,4 +1,4 @@
-package com.Hileb.command_toast;
+package world.maryt.CommandToast;
 
 import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.ConfigManager;
@@ -11,14 +11,14 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
  * @Author Hileb
  * @Date 2023/12/30 20:05
  **/
-@Config(modid = CommandToastMod.MODID,category="")
+@Config(modid = CommandToastMod.MOD_ID,category="")
 public class CTMConfig {
     @Mod.EventBusSubscriber
     public static class EventHandler{
         @SubscribeEvent
         public static void onConfigChange(ConfigChangedEvent event){
-            if (CommandToastMod.MODID.equals(event.getModID())){
-                ConfigManager.sync(CommandToastMod.MODID,Config.Type.INSTANCE);
+            if (CommandToastMod.MOD_ID.equals(event.getModID())){
+                ConfigManager.sync(CommandToastMod.MOD_ID,Config.Type.INSTANCE);
             }
         }
     }

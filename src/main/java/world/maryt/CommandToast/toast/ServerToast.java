@@ -1,4 +1,4 @@
-package com.Hileb.command_toast.toast;
+package world.maryt.CommandToast.toast;
 
 import net.minecraft.client.gui.toasts.IToast;
 import net.minecraft.nbt.NBTTagCompound;

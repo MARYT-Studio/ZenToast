@@ -1,9 +1,9 @@
-package com.Hileb.command_toast.command;
+package world.maryt.CommandToast.command;
 
-import com.Hileb.command_toast.CTMConfig;
-import com.Hileb.command_toast.network.NetworkHandler;
-import com.Hileb.command_toast.network.S2CToastPack;
-import com.Hileb.command_toast.toast.ServerToast;
+import world.maryt.CommandToast.CTMConfig;
+import world.maryt.CommandToast.network.NetworkHandler;
+import world.maryt.CommandToast.network.S2CToastPack;
+import world.maryt.CommandToast.toast.ServerToast;
 import net.minecraft.command.*;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.server.MinecraftServer;
@@ -18,11 +18,6 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @Project CommandToast
- * @Author Hileb
- * @Date 2023/12/30 20:05
- **/
 public class CommandToast extends CommandTreeBase {
     public CommandToast(){
         ToastType.onRegister();

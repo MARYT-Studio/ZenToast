@@ -1,6 +1,6 @@
-package com.Hileb.command_toast.command;
+package world.maryt.CommandToast.command;
 
-import com.Hileb.command_toast.toast.ServerToast;
+import world.maryt.CommandToast.toast.ServerToast;
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.server.MinecraftServer;
@@ -9,7 +9,6 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.eventhandler.Event;
 
 import javax.annotation.Nullable;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;

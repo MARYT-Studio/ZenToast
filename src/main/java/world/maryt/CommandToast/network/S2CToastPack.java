@@ -1,8 +1,7 @@
-package com.Hileb.command_toast.network;
+package world.maryt.CommandToast.network;
 
-import com.Hileb.command_toast.CommandToastMod;
-import com.Hileb.command_toast.command.ToastType;
-import com.Hileb.command_toast.toast.ServerToast;
+import world.maryt.CommandToast.command.ToastType;
+import world.maryt.CommandToast.toast.ServerToast;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.toasts.IToast;
@@ -12,11 +11,6 @@ import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
 import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
 
-/**
- * @Project CommandToast
- * @Author Hileb
- * @Date 2023/12/30 20:37
- **/
 public class S2CToastPack implements IMessage {
     public boolean isCorrect=false;
     public ServerToast toastServer;
@@ -33,9 +27,7 @@ public class S2CToastPack implements IMessage {
             serverToast.deserializeNBT(compound.getCompoundTag("toast"));
             toastServer=serverToast;
             isCorrect=true;
-        }catch (Exception exception){
-
-        }
+        } catch (Exception ignored) {}
     }
 
     @Override
