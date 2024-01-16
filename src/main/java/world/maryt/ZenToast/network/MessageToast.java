@@ -1,6 +1,5 @@
-package world.maryt.CommandToast.network;
+package world.maryt.ZenToast.network;
 
-import crafttweaker.api.data.IData;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.network.ByteBufUtils;
@@ -16,9 +15,6 @@ public class MessageToast implements IMessage {
         this.titleJson = titleJson;
         this.textJson = textJson;
         this.iconStack = iconStack;
-    }
-    public MessageToast(IData titleJson, IData textJson, ItemStack iconStack) {
-        new MessageToast(titleJson.toString(), textJson.toString(), iconStack);
     }
     @Override
     public void fromBytes(ByteBuf buf) {
