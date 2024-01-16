@@ -88,6 +88,13 @@ repositories {
         url 'https://repo.spongepowered.org/maven'
     }
     maven {
+        name 'BlameJared'
+        url 'https://maven.blamejared.com/'
+        content {
+            includeGroup 'CraftTweaker2'
+        }
+    }
+    maven {
         name 'CurseMaven'
         url 'https://cursemaven.com'
         content {
@@ -107,6 +114,16 @@ dependencies {
 
     // Example of deobfuscating a dependency
     // implementation rfg.deobf('curse.maven:had-enough-items-557549:4543375')
+
+    // Dependencies
+    implementation rfg.deobf('CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.695')
+    implementation rfg.deobf('CraftTweaker2:CraftTweaker2-API:4.1.20.695')
+    implementation rfg.deobf('CraftTweaker2:ZenScript:4.1.20.695')
+
+    // Util Mods. just for debug convenience
+    runtimeOnly rfg.deobf('curse.maven:zenutil-401178:4984714')
+    runtimeOnly 'zone.rong:mixinbooter:7.1'
+
 
     if (project.use_mixins.toBoolean()) {
         // Change your mixin refmap name here:
