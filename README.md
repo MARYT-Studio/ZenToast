@@ -28,7 +28,11 @@ import crafttweaker.data.IData;
 player.sendToast({"text": 111111, "color": "gold"} as IData, {"text": "Hello world"} as IData, <minecraft:apple>);
 ```
 
-## License and Credits
+### Demo
+
+https://imgur.com/gallery/CbyVLCz
+
+### License and Credits
 
 This mod is built upon the foundation of the `1.12.2` branch of [Ecdcaeb/Command-Toast](https://github.com/Ecdcaeb/Command-Toast/tree/1.12.2).
 
@@ -71,7 +75,11 @@ import crafttweaker.data.IData;
 player.sendToast({"text": 111111, "color": "gold"} as IData, {"text": "Hello world"} as IData, <minecraft:apple>);
 ```
 
-## 开源许可 & 致谢
+### 使用例
+
+https://imgur.com/gallery/CbyVLCz
+
+### 开源许可 & 致谢
 
 本模组的源代码是在 [Ecdcaeb/Command-Toast](https://github.com/Ecdcaeb/Command-Toast/tree/1.12.2) 项目的 `1.12.2` 分支基础上编写的。
 
