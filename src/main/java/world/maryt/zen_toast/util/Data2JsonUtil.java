@@ -1,4 +1,4 @@
-package world.maryt.ZenToast.util;
+package world.maryt.zen_toast.util;
 
 import crafttweaker.api.data.IData;
 import java.util.Map;

@@ -1,12 +1,13 @@
-package world.maryt.ZenToast.network;
+package world.maryt.zen_toast.network;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.toasts.IToast;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
 import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
-import world.maryt.ZenToast.ZenToast;
-import world.maryt.ZenToast.toast.SimpleToast;
+import world.maryt.zen_toast.ZenToast;
+import world.maryt.zen_toast.network.MessageToast;
+import world.maryt.zen_toast.toast.SimpleToast;
 
 public class MessageToastHandler implements IMessageHandler<MessageToast, IMessage> {
     @Override

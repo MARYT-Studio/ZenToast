@@ -1,4 +1,4 @@
-package world.maryt.ZenToast.network;
+package world.maryt.zen_toast.network;
 
 import io.netty.buffer.ByteBuf;
 import net.minecraft.item.ItemStack;

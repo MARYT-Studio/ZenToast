@@ -1,4 +1,4 @@
-package world.maryt.ZenToast.network;
+package world.maryt.zen_toast.network;
 
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;

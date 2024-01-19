@@ -1,4 +1,4 @@
-package world.maryt.ZenToast;
+package world.maryt.zen_toast;
 
 import crafttweaker.CraftTweakerAPI;
 import crafttweaker.annotations.ZenRegister;
@@ -10,9 +10,9 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import stanhebben.zenscript.annotations.ZenExpansion;
 import stanhebben.zenscript.annotations.ZenMethod;
-import world.maryt.ZenToast.network.MessageToast;
-import world.maryt.ZenToast.network.NetworkManager;
-import world.maryt.ZenToast.util.Data2JsonUtil;
+import world.maryt.zen_toast.network.MessageToast;
+import world.maryt.zen_toast.network.NetworkManager;
+import world.maryt.zen_toast.util.Data2JsonUtil;
 
 @ZenRegister
 @ZenExpansion("crafttweaker.player.IPlayer")

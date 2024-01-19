@@ -1,4 +1,4 @@
-package world.maryt.ZenToast.toast;
+package world.maryt.zen_toast.toast;
 
 import com.google.gson.JsonParseException;
 import com.google.gson.JsonSyntaxException;
