@@ -17,43 +17,37 @@ import java.util.List;
 
 @SideOnly(Side.CLIENT)
 public class SimpleToast implements IToast {
-    public String titleJson;
-    public String textJson;
+    public ITextComponent title;
+    public ITextComponent text;
     public ItemStack icon;
     public SimpleToast(String titleJson, String textJson, ItemStack icon) throws JsonParseException {
         try {
-            ITextComponent.Serializer.jsonToComponent(titleJson);
-            this.titleJson = titleJson;
+            this.title = ITextComponent.Serializer.jsonToComponent(titleJson);
         } catch (JsonSyntaxException e) {
             CraftTweakerAPI.logError("Title JSON has syntax error.");
             CraftTweakerAPI.logError(titleJson);
-            this.titleJson = null;
+            this.title = null;
         } catch (JsonParseException e) {
             CraftTweakerAPI.logError("Title JSON syntax is correct, but cannot be transformed into ITextComponent. Rewrite it following the vanilla Minecraft rules.");
             CraftTweakerAPI.logError(titleJson);
-            this.titleJson = null;
+            this.title = null;
         }
         try {
-            ITextComponent.Serializer.jsonToComponent(textJson);
-            this.textJson = textJson;
+            this.text = ITextComponent.Serializer.jsonToComponent(textJson);
         } catch (JsonSyntaxException e) {
             CraftTweakerAPI.logError("Text JSON has syntax error.");
             CraftTweakerAPI.logError(textJson);
-            this.textJson = null;
+            this.text = null;
         } catch (JsonParseException e) {
             CraftTweakerAPI.logError("Title JSON syntax is correct, but cannot be transformed into ITextComponent. Rewrite it following the vanilla Minecraft rules.");
             CraftTweakerAPI.logError(textJson);
-            this.textJson = null;
+            this.text = null;
         }
         this.icon = icon;
     }
     @Override
     @SuppressWarnings("NullableProblems")
     public Visibility draw(GuiToast toastGui, long delta) {
-
-        if (titleJson == null || textJson == null) return Visibility.HIDE;
-        ITextComponent title = ITextComponent.Serializer.jsonToComponent(this.titleJson);
-        ITextComponent text = ITextComponent.Serializer.jsonToComponent(this.textJson);
         if (title == null || text == null) return Visibility.HIDE;
 
         toastGui.getMinecraft().getTextureManager().bindTexture(TEXTURE_TOASTS);
